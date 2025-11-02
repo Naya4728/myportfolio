@@ -60,26 +60,42 @@ export default function PortfolioWebsite() {
       <Navbar themeDark={themeDark} setThemeDark={setThemeDark} name={data.name} />
 
       <main className="scroll-smooth">
-        {/* Hero Section */}
-        <section id="home" className="flex flex-col md:flex-row items-center justify-center h-screen max-w-6xl mx-auto px-6 gap-10">
-          <motion.div className="flex-1" initial={{ opacity: 0, x: -50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
-            <h1 className="text-6xl md:text-7xl font-extrabold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
-              {data.name}
-            </h1>
-            <h2 className="text-2xl md:text-3xl text-gray-300 mt-4">{data.title}</h2>
-            <p className="mt-6 text-gray-400 max-w-xl">{data.intro}</p>
-          </motion.div>
+  {/* Hero Section */}
+<section
+  id="home"
+  className="flex flex-col md:flex-row items-center justify-center h-screen max-w-6xl mx-auto px-6 gap-10 pt-20 md:pt-0"
+>
+  <motion.div
+    className="flex-1"
+    initial={{ opacity: 0, x: -50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 1 }}
+  >
+    <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent leading-tight">
+      {data.name}
+    </h1>
+    <h2 className="text-lg sm:text-xl md:text-3xl text-gray-300 mt-4">
+      {data.title}
+    </h2>
+    <p className="mt-6 text-gray-400 max-w-xl">{data.intro}</p>
+  </motion.div>
 
-          <motion.div className="flex-1 flex justify-center md:justify-end" initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1 }}>
-            <Image
-              src="/my.jpg"
-              alt={data.name}
-              width={250}
-              height={250}
-              className="rounded-full border-4 border-purple-500 shadow-xl object-cover"
-            />
-          </motion.div>
-        </section>
+  <motion.div
+    className="flex-1 flex justify-center md:justify-end"
+    initial={{ opacity: 0, x: 50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 1 }}
+  >
+    <Image
+      src="/my.jpg"
+      alt={data.name}
+      width={250}
+      height={250}
+      className="rounded-full border-4 border-purple-500 shadow-xl object-cover"
+    />
+  </motion.div>
+</section>
+
 
         {/* About Section */}
         <section id="about" className="max-w-6xl mx-auto px-6 py-24 scroll-mt-16">
