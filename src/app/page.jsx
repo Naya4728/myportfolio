@@ -40,7 +40,7 @@ const data = {
   title: "VaultPay – Smart Finance Dashboard",
   desc: "A responsive fintech web app for managing transactions, tracking goals, and monitoring investments with modern analytics and animations.",
   tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
-  link: "https://https://fintech-amber-five.vercel.app//",
+  link: "https://fintech-amber-five.vercel.app//",
 },
   ],
   contact: {
