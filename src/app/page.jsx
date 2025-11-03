@@ -35,6 +35,13 @@ const data = {
       tech: ["Django", "React", "Tailwind CSS", "PostgreSQL"],
       link: "https://hospital-eight-steel.vercel.app/",
     },
+    {
+  id: 4,
+  title: "VaultPay – Smart Finance Dashboard",
+  desc: "A responsive fintech web app for managing transactions, tracking goals, and monitoring investments with modern analytics and animations.",
+  tech: ["Next.js", "React", "Tailwind CSS", "Framer Motion"],
+  link: "https://https://fintech-amber-five.vercel.app//",
+},
   ],
   contact: {
     email: "olayinka4728@gmail.com",
